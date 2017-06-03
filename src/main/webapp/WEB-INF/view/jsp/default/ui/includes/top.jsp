@@ -17,14 +17,5 @@
 <body id="cas">
 	<div id="container">
 		<header>
-			<div align="center">
-				<h2>
-					<font color="#DD5A43" size="5">易淘客</font>
-					<font color="gray" size="5">平台管理入口</font>
-				</h2>
-				<h4>
-					<font color="#478fca" size="3">&copy; 卡联科技</font>
-				</h4>
-			</div>
 		</header>
 		<div id="content">

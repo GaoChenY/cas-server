@@ -13,12 +13,8 @@ public class UsernamePasswordCaptchaCredential extends UsernamePasswordCredentia
 	private static final long serialVersionUID = 8997403977917163501L;
 	
 	@NotNull
-    @Size(min=1,message = "required.captcha")
+    @Size(min=1,message = "请您输入验证码")
     private String captcha;
-	
-	@NotNull
-    @Size(min=1,message = "required.serviceBrand")
-	private String serviceBrand;
 
 	public String getCaptcha() {
 		return captcha;
@@ -27,15 +23,6 @@ public class UsernamePasswordCaptchaCredential extends UsernamePasswordCredentia
 	public void setCaptcha(String captcha) {
 		this.captcha = captcha;
 	}
-
-	public String getServiceBrand() {
-		return serviceBrand;
-	}
-
-	public void setServiceBrand(String serviceBrand) {
-		this.serviceBrand = serviceBrand;
-	}
-	
 	
 	
 }

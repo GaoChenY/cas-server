@@ -15,6 +15,8 @@ import org.springframework.dao.IncorrectResultSizeDataAccessException;
 
 import com.kalian.cas.authentication.yanzhengma.UsernamePasswordCaptchaCredential;
 
+import net.wangxj.util.encry.PBKDF2SHA1;
+
 public class KalianQueryDatabaseAuthenticationHandler extends KalianAbstractJdbcUsernamePasswordAuthenticationHandler {
 	
 	 @NotNull
@@ -28,11 +30,10 @@ public class KalianQueryDatabaseAuthenticationHandler extends KalianAbstractJdbc
 	            throws GeneralSecurityException, PreventedException {
 
 	        final String username = credential.getUsername();
-	        final String serviceBrand = credential.getServiceBrand();
-	        final String encryptedPassword = this.getPasswordEncoder().encode(credential.getPassword());
 	        try {
-	            final String dbPassword = getJdbcTemplate().queryForObject(this.sql, String.class, username,serviceBrand);
-	            if (!dbPassword.equals(encryptedPassword)) {
+	            final String dbPassword = getJdbcTemplate().queryForObject(this.sql, String.class, username);
+	            
+	            if (!PBKDF2SHA1.validatePassword(credential.getPassword(), dbPassword)) {
 	                throw new FailedLoginException("Password does not match value on record.");
 	            }
 	        } catch (final IncorrectResultSizeDataAccessException e) {

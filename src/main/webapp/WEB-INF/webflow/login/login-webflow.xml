@@ -85,7 +85,6 @@
 
     <view-state id="viewLoginForm" view="casLoginView" model="credential">
         <binder>
-        	<binding property="serviceBrand" required="true"/>
             <binding property="username" required="true"/>
             <binding property="password" required="true"/>
             <!-- 验证码 -->

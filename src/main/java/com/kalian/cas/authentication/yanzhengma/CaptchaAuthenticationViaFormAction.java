@@ -23,7 +23,11 @@ public class CaptchaAuthenticationViaFormAction extends AuthenticationViaFormAct
             session.removeAttribute(com.google.code.kaptcha.Constants.KAPTCHA_SESSION_KEY);  
             
             UsernamePasswordCaptchaCredential upc = (UsernamePasswordCaptchaCredential)credential;  
-            String submitAuthcodeCaptcha =upc.getCaptcha(); 
+            String submitAuthcodeCaptcha =upc.getCaptcha();
+            if(captcha != null){
+            	captcha = captcha.toLowerCase();
+            }
+            submitAuthcodeCaptcha = submitAuthcodeCaptcha.toLowerCase();
             
             
             if(!StringUtils.hasText(submitAuthcodeCaptcha)){
