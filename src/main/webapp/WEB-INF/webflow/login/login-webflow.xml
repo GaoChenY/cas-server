@@ -24,7 +24,7 @@
       xsi:schemaLocation="http://www.springframework.org/schema/webflow
                           http://www.springframework.org/schema/webflow/spring-webflow.xsd">
 
-    <var name="credential" class="com.kalian.cas.authentication.yanzhengma.UsernamePasswordCaptchaCredential"/>
+    <var name="credential" class="net.wangxj.authority.cas.captcha.UsernamePasswordCaptchaCredential"/>
     <on-start>
         <evaluate expression="initialFlowSetupAction"/>
     </on-start>

@@ -285,7 +285,7 @@
   <bean id="proxyController" class="org.jasig.cas.web.ProxyController"
         p:centralAuthenticationService-ref="centralAuthenticationService"/>
 
-  <bean id="logoutAction" class="com.kalian.cas.authentication.logout.KalianLogoutAction"
+  <bean id="logoutAction" class="net.wangxj.authority.cas.logout.WangXJLogoutAction"
         p:servicesManager-ref="servicesManager"
         p:followServiceRedirects="${cas.logout.followServiceRedirects:true}"/>
 
@@ -302,7 +302,7 @@
   <bean id="genericSuccessViewAction" class="org.jasig.cas.web.flow.GenericSuccessViewAction"
         c:centralAuthenticationService-ref="centralAuthenticationService" />
 
-  <bean id="authenticationViaFormAction" class="com.kalian.cas.authentication.yanzhengma.CaptchaAuthenticationViaFormAction"
+  <bean id="authenticationViaFormAction" class="net.wangxj.authority.cas.captcha.CaptchaAuthenticationViaFormAction"
         p:centralAuthenticationService-ref="centralAuthenticationService"
         p:warnCookieGenerator-ref="warnCookieGenerator"/>
 

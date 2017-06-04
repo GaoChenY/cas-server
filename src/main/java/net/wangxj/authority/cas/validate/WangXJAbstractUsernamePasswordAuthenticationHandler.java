@@ -1,4 +1,4 @@
-package com.kalian.cas.authentication.validate;
+package net.wangxj.authority.cas.validate;
 
 import java.security.GeneralSecurityException;
 
@@ -16,9 +16,9 @@ import org.jasig.cas.authentication.handler.PrincipalNameTransformer;
 import org.jasig.cas.authentication.handler.support.AbstractPreAndPostProcessingAuthenticationHandler;
 import org.jasig.cas.authentication.support.PasswordPolicyConfiguration;
 
-import com.kalian.cas.authentication.yanzhengma.UsernamePasswordCaptchaCredential;
+import net.wangxj.authority.cas.captcha.UsernamePasswordCaptchaCredential;
 
-public abstract class KalianAbstractUsernamePasswordAuthenticationHandler
+public abstract class WangXJAbstractUsernamePasswordAuthenticationHandler
 		extends AbstractPreAndPostProcessingAuthenticationHandler {
 
 	 /**

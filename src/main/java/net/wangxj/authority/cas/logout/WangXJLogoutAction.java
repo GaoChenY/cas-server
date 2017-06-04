@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.kalian.cas.authentication.logout;
+package net.wangxj.authority.cas.logout;
 
 import org.jasig.cas.authentication.principal.Service;
 import org.jasig.cas.authentication.principal.SimpleWebApplicationServiceImpl;
@@ -44,7 +44,7 @@ import java.util.List;
  * @author Jerome Leleu
  * @since 3.0.0
  */
-public final class KalianLogoutAction extends AbstractLogoutAction {
+public final class WangXJLogoutAction extends AbstractLogoutAction {
 
     /** The services manager. */
     @NotNull

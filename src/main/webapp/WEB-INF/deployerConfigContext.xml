@@ -125,7 +125,7 @@
 		<constructor-arg name="encodingAlgorithm" value="MD5" />
 		<property name="characterEncoding" value="UTF-8" />
 	</bean> -->
-	<bean id="dbAuthHandler" class="com.kalian.cas.authentication.validate.KalianQueryDatabaseAuthenticationHandler">
+	<bean id="dbAuthHandler" class="net.wangxj.authority.cas.validate.WangXJQueryDatabaseAuthenticationHandler">
 		<property name="dataSource" ref="dataSource" />
 		<!-- <property name="passwordEncoder" ref="passwordEncoder" /> -->
 		<!-- <property name="sql" value="select pub.pub_login_pwd from platform_user_base pub where pub.pub_login_name = ?" /> -->

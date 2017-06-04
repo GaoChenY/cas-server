@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.huoshan.sso</groupId>
-	<artifactId>huoshan-ssoserver</artifactId>
+	<groupId>net.wangxj.authority.cas</groupId>
+	<artifactId>cas-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -127,7 +127,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>ssoserver</finalName>
+		<finalName>cas-server</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

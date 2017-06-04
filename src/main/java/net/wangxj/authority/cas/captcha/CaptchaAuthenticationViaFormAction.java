@@ -1,4 +1,4 @@
-package com.kalian.cas.authentication.yanzhengma;
+package net.wangxj.authority.cas.captcha;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;

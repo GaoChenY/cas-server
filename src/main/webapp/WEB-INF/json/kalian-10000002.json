@@ -2,7 +2,7 @@
   "@class" : "org.jasig.cas.services.RegexRegisteredService",
   "id" : 10000002,
   "name" : "kalian",
-  "serviceId" : "http://localcallsrecharge.etaoko.com:8067/callsrechargeweb/login/cas",
+  "serviceId" : "http://localauthority.com:8083/login/cas",
   "evaluationOrder" : 0
 }
 

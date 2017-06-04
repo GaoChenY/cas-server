@@ -1,12 +1,12 @@
-package com.kalian.cas.authentication.validate;
+package net.wangxj.authority.cas.validate;
 
 import javax.sql.DataSource;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
-public abstract class KalianAbstractJdbcUsernamePasswordAuthenticationHandler
-		extends KalianAbstractUsernamePasswordAuthenticationHandler {
+public abstract class WangXJAbstractJdbcUsernamePasswordAuthenticationHandler
+		extends WangXJAbstractUsernamePasswordAuthenticationHandler {
 
 	@NotNull
     private JdbcTemplate jdbcTemplate;

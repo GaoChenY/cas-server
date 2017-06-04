@@ -1,4 +1,4 @@
-package com.kalian.cas.authentication.validate;
+package net.wangxj.authority.cas.validate;
 
 import java.security.GeneralSecurityException;
 
@@ -13,11 +13,10 @@ import org.jasig.cas.authentication.UsernamePasswordCredential;
 import org.springframework.dao.DataAccessException;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
 
-import com.kalian.cas.authentication.yanzhengma.UsernamePasswordCaptchaCredential;
-
+import net.wangxj.authority.cas.captcha.UsernamePasswordCaptchaCredential;
 import net.wangxj.util.encry.PBKDF2SHA1;
 
-public class KalianQueryDatabaseAuthenticationHandler extends KalianAbstractJdbcUsernamePasswordAuthenticationHandler {
+public class WangXJQueryDatabaseAuthenticationHandler extends WangXJAbstractJdbcUsernamePasswordAuthenticationHandler {
 	
 	 @NotNull
 	    private String sql;
