@@ -24,17 +24,13 @@ public class CaptchaAuthenticationViaFormAction extends AuthenticationViaFormAct
             
             UsernamePasswordCaptchaCredential upc = (UsernamePasswordCaptchaCredential)credential;  
             String submitAuthcodeCaptcha =upc.getCaptcha();
-            if(captcha != null){
-            	captcha = captcha.toLowerCase();
-            }
-            submitAuthcodeCaptcha = submitAuthcodeCaptcha.toLowerCase();
             
             
             if(!StringUtils.hasText(submitAuthcodeCaptcha)){
                 messageContext.addMessage(new MessageBuilder().error().code("required.captcha").build()); 
                 return new Event(this,ERROR);  
             }  
-            if(submitAuthcodeCaptcha.equals(captcha)){    
+            if(submitAuthcodeCaptcha.equalsIgnoreCase(captcha)){    
             	return new Event(this,SUCCESS);
             }  
 //            messageContext.addMessage(new MessageBuilder().code("").build());

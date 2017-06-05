@@ -1,0 +1,9 @@
+{
+  "@class" : "org.jasig.cas.services.RegexRegisteredService",
+  "id" : 10000001,
+  "name" : "权限平台",
+  "serviceId" : "http://localauthority.com:8083/login/cas",
+  "evaluationOrder" : 0
+}
+
+

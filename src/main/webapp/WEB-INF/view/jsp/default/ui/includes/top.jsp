@@ -9,7 +9,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>卡联科技登录入口</title>
+<title>${requestScope.registeredService.name}</title>
 <spring:theme code="standard.custom.css.file" var="customCssFile" />
 <link rel="stylesheet" href="<c:url value="${customCssFile}" />" />
 <link rel="icon" href="<c:url value="/favicon.ico" />"type="image/x-icon" />

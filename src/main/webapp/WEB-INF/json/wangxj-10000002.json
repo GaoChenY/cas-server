@@ -1,8 +1,8 @@
 {
   "@class" : "org.jasig.cas.services.RegexRegisteredService",
   "id" : 10000002,
-  "name" : "kalian",
-  "serviceId" : "http://localauthority.com:8083/login/cas",
+  "name" : "权限平台2",
+  "serviceId" : "http://localauthority2.com:8084/login/cas",
   "evaluationOrder" : 0
 }
 
