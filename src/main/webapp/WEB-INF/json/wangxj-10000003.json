@@ -1,0 +1,9 @@
+{
+  "@class" : "org.jasig.cas.services.RegexRegisteredService",
+  "id" : 10000003,
+  "name" : "博客平台",
+  "serviceId" : "http://localcodeblog.net:8000/login/cas",
+  "evaluationOrder" : 0
+}
+
+

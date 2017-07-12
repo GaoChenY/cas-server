@@ -129,7 +129,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<!-- <property name="passwordEncoder" ref="passwordEncoder" /> -->
 		<!-- <property name="sql" value="select pub.pub_login_pwd from platform_user_base pub where pub.pub_login_name = ?" /> -->
-		<property name="sql" value="SELECT user_login_pwd from authority_user WHERE user_email=?" />
+		<property name="sql" value="SELECT user_login_pwd from authority_user WHERE user_email=? and user_status = 2 and user_is_delete = 2" />
 	</bean>
 	
 
